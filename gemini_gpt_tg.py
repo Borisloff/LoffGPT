@@ -7,13 +7,13 @@ import google.generativeai as genai
 
 
 def gemini(prompt):
-    genai.configure(api_key="AIzaSyAReqfyUuMlRbk9GT9kAZyN_TswANAtQr0")
+    genai.configure(api_key="token")
     model = genai.GenerativeModel("gemini-2.0-flash")
     answer = model.generate_content(prompt)
     return answer.text
 
 # Токен бота (получи у @BotFather)
-BOT_TOKEN = "8181619242:AAHHtS2HAqUlptMU94_qZhvLRLPs7PTSZZo"
+BOT_TOKEN = "token"
 
 # Инициализация бота и диспетчера
 bot = Bot(token=BOT_TOKEN)
